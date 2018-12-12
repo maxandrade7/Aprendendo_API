@@ -1,0 +1,28 @@
+<form ng-controller="ListNotesCtrl">
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+      ng-click="listNotes()">
+      Listar
+    </button>
+    <table class="table table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Título</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Criado em</th>
+                <th scope="col">Criado por</th>
+                <th scope="col">Prioridade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="note in notes">
+                <td scope="row">{{note.id}}</td>
+                <td scope="row">{{note.title}}</td>
+                <td scope="row">{{note.description}}</td>
+                <td scope="row">{{note.created_at}}</td>
+                <td scope="row">{{note.created_by}}</td>
+                <td scope="row">{{note.priotiry}}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>

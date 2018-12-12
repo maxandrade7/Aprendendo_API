@@ -1,0 +1,51 @@
+<form ng-controller="FindNoteCtrl">
+  <div class="box">
+
+         <div class="form-group">
+             <label for="titulo">
+                 Título:
+             </label>
+             <input class="form-control" type="text" name="titulo"
+               ng-model="note.title" />
+         </div>
+
+         <div class="form-group">
+             <label for="descricao">
+                 Descrição:
+             </label>
+             <input class="form-control" type="text" name="descricao"
+               ng-model="note.description" />
+         </div>
+
+         <div class="form-group">
+             <label for="criadoem">
+                 Criado em:
+             </label>
+             <input class="form-control" type="text" name="criadoem"
+               ng-model="note.create_at" />
+         </div>
+
+         <div class="form-group">
+             <label for="criadopor">
+                 Criado por:
+             </label>
+             <input class="form-control" type="text" name="criadopor"
+               ng-model="note.create_by" />
+         </div>
+
+         <div class="form-group">
+             <label for="prioridade">
+                 Prioridade:
+             </label>
+             <input class="form-control" type="text" name="prioridade"
+               ng-model="note.priority" />
+         </div>
+
+         {{note}}
+
+         <button type="button" class="btn btn-primary btn-lg btn-block"
+           ng-click="insertNote()">
+             Inserir
+         </button>
+  </div>
+</form>

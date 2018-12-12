@@ -1,0 +1,34 @@
+notes
+/notes/
+- get
+- post (inserir)
+  {
+    "title": "",
+    "description": "",
+    "create_at": "",
+    "create_by": "",
+    "priority": ""
+  }
+
+/notes/{id}
+  - get
+    title,
+    description,
+    create_at,
+    create_by,
+    priority
+
+  - delete (remover)
+  title,
+  description,
+  create_at,
+  create_by,
+  priority
+  - put (atualizar)
+  {
+    "title": "",
+    "description": "",
+    "create_at": "",
+    "create_by": "",
+    "priority": ""
+  }
